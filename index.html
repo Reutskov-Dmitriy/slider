@@ -5,26 +5,45 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title>OnWave</title>
 </head>
 
 <body>
-	<section class="products">
-		<h2 class="products__title">new arrivals</h2>
-		<div class="products__cards card">
-			<button class="card__btnPrew">&lt</button>
-			<figure class="card__slider">
-				<img src="assets/images/hagstrom-alvar.jpg" alt="Hagstrom Alvar Limited Edition">
-				<figcaption class="card__description">
-					<p>Hagstrom Alvar Limited Edition</p>
-					<p>€2.990,00</p>
-				</figcaption>
-			</figure>
-			<button class="card__btnNext">&gt</button>
-			<button class="products__btn">view more</button>
+	<main>
+		<section class="products">
+			<h2 class="products__title">new arrivals</h2>
+			<div class="products__cards card">
+				<button class="card__btnPrew">&lt</button>
+				<div class="card__slider slider">
+					<div class="slider__line">
+						<figure class="slider__item">
+							<div>
+								<img src="assets/images/hagstrom-alvar.jpg" alt="Hagstrom Alvar Limited Edition">
+							</div>
+							<figcaption class="slider__description">
+								<p>Hagstrom Alvar Limited Edition</p>
+								<p>€2.990,00</p>
+							</figcaption>
+						</figure>
 
-		</div>
-	</section>
+						<figure class="slider__item">
+							<div>
+								<img src="assets/images/hagstrom-alvar.jpg" alt="Hagstrom Alvar Limited Edition">
+							</div>
+							<figcaption class="slider__description">
+								<p>Hagstrom Alvar Limited Edition</p>
+								<p>€2.990,00</p>
+							</figcaption>
+						</figure>
+
+					</div>
+				</div>
+				<button class="card__btnNext">&gt</button>
+			</div>
+			<button class="products__btn">view more</button>
+		</section>
+	</main>
 
 </body>
 
