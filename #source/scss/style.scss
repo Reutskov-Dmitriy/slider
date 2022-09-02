@@ -61,11 +61,11 @@ main {
 }
 .btn-next {
 	&::before {
-		content: url("../../assets/images/icon/next-active.png");
+		content: url("../assets/images/icon/next-active.png");
 		min-width: 100%;
 		min-height: 100%;
 	}
-	right: -10px;
+	right: -15px;
 }
 .slider {
 	margin: 0 auto;

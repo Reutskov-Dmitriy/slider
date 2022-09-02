@@ -6,6 +6,8 @@ const btnPrev = document.querySelector('.btn-prev');
 let widthSlider
 let count = 0;
 
+
+
 btnNext.addEventListener('click', () => {
 	count += 1;
 	if (count >= items.length) {
@@ -35,6 +37,7 @@ function init() {
 		item.style.height = 'auto';
 	})
 	offsetNext();
+
 }
 window.addEventListener('resize', init)
 init()
@@ -43,3 +46,12 @@ init()
 function offsetNext() {
 	sliderLine.style.transform = 'translate(-' + count * widthSlider + 'px)';
 }
+
+setInterval(() => {
+	const sliderBtn = document.querySelector('.card__btn')
+	if (sliderBtn.matches(':hover') || sliderLine.matches(':hover'))
+		return
+
+	offsetNext()
+}
+	, 3000);
