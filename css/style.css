@@ -1,4 +1,5 @@
 /*Reset*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -79,18 +80,31 @@ h6 {
 }
 
 /*--------------------*/
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #000000;
+}
+
 main {
   margin: 0 auto;
   min-width: 320px;
-  background-color: aqua;
 }
 
 .products {
+  padding: 50px 5px;
   min-width: 300px;
-  min-height: 663px;
+  min-height: 100vh;
   display: flex;
+  gap: 40px;
   flex-direction: column;
   align-items: center;
+}
+.products__title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .products__btn {
   display: block;
@@ -99,15 +113,67 @@ main {
 }
 
 .card {
+  position: relative;
   min-width: 300px;
   height: 470px;
 }
+.card__btn {
+  position: absolute;
+  top: 40%;
+  z-index: 9;
+  min-width: 16px;
+  min-height: 16px;
+  border: none;
+}
+.btn-prev {
+  left: -10px;
+}
+.btn-prev::before {
+  content: url("../assets/images/icon/prev.png");
+}
+
+.btn-next {
+  right: -10px;
+}
+.btn-next::before {
+  content: url("../../assets/images/icon/next-active.png");
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .slider {
   margin: 0 auto;
-  max-width: 100%;
+  width: 300px;
   overflow: hidden;
-  border: 1px solid red;
 }
 .slider__line {
   display: flex;
+  transition: 1s;
+}
+.slider__items {
+  text-align: center;
+}
+.slider__items__item {
+  min-width: 200px;
+}
+.slider__items__item img {
+  display: inline-block;
+  min-width: 200px;
+  height: auto;
+}
+.slider__description {
+  margin-top: 10px;
+}
+.slider__description p {
+  margin-top: 10px;
+}
+.slider__title {
+  font-weight: 600;
+  line-height: 20px;
+}
+.slider__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */

@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=`, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<script defer src="js/script.js"></script>
 	<title>OnWave</title>
 </head>
 
@@ -14,32 +15,63 @@
 		<section class="products">
 			<h2 class="products__title">new arrivals</h2>
 			<div class="products__cards card">
-				<button class="card__btnPrew">&lt</button>
+				<div class="card__btn btn-prev"></div>
 				<div class="card__slider slider">
 					<div class="slider__line">
-						<figure class="slider__item">
-							<div>
+						<figure class="slider__items">
+							<div class="slider__item">
 								<img src="assets/images/hagstrom-alvar.jpg" alt="Hagstrom Alvar Limited Edition">
 							</div>
 							<figcaption class="slider__description">
-								<p>Hagstrom Alvar Limited Edition</p>
-								<p>€2.990,00</p>
+								<p class="slider__title">Hagstrom Alvar Limited Edition</p>
+								<p class="slider__price">€2.990,00</p>
 							</figcaption>
 						</figure>
 
-						<figure class="slider__item">
-							<div>
-								<img src="assets/images/hagstrom-alvar.jpg" alt="Hagstrom Alvar Limited Edition">
+						<figure class="slider__items">
+							<div class="slider__item">
+								<img src="assets/images/hagstrom-viking.jpg" alt="Hagstrom Tremar Viking Deluxe">
 							</div>
 							<figcaption class="slider__description">
-								<p>Hagstrom Alvar Limited Edition</p>
-								<p>€2.990,00</p>
+								<p class="slider__title">Hagstrom Tremar Viking Deluxe Cloudy Seas</p>
+								<p class="slider__price">€1.300,00</p>
+							</figcaption>
+						</figure>
+
+						<figure class="slider__items">
+							<div class="slider__item">
+								<img src="assets/images/gibson-les-paul.jpg" alt="Gibson Les Paul Standard 60s">
+							</div>
+							<figcaption class="slider__description">
+								<p class="slider__title">Gibson Les Paul Standard 60s</p>
+								<p class="slider__price">€3.749,00</p>
+							</figcaption>
+						</figure>
+
+						<figure class="slider__items">
+							<div class="slider__item">
+								<img src="assets/images/suhr-standard-plus.jpg" alt="Suhr Standard Plus Trans Blue Denim">
+							</div>
+							<figcaption class="slider__description">
+								<p class="slider__title">Suhr Standard Plus Trans Blue Denim</p>
+								<p class="slider__price">€3.449,00</p>
+							</figcaption>
+						</figure>
+
+						<figure class="slider__items">
+							<div class="slider__item">
+								<img src="assets/images/fender-telecaster-black.jpg"
+									alt="Fender Telecaster Black Paisley Limited Edition">
+							</div>
+							<figcaption class="slider__description">
+								<p class="slider__title">Fender Telecaster Black Paisley Limited Edition</p>
+								<p class="slider__price">€1.499,00</p>
 							</figcaption>
 						</figure>
 
 					</div>
 				</div>
-				<button class="card__btnNext">&gt</button>
+				<div class="card__btn btn-next"></div>
 			</div>
 			<button class="products__btn">view more</button>
 		</section>
