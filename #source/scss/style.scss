@@ -57,13 +57,11 @@ main {
 	&::before {
 		content: url("../assets/images/icon/prev.png");
 	}
-	left: -10px;
+	left: -15px;
 }
 .btn-next {
 	&::before {
 		content: url("../assets/images/icon/next-active.png");
-		min-width: 100%;
-		min-height: 100%;
 	}
 	right: -15px;
 }

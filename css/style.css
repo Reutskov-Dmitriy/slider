@@ -126,7 +126,7 @@ main {
   border: none;
 }
 .btn-prev {
-  left: -10px;
+  left: -15px;
 }
 .btn-prev::before {
   content: url("../assets/images/icon/prev.png");
@@ -137,8 +137,6 @@ main {
 }
 .btn-next::before {
   content: url("../assets/images/icon/next-active.png");
-  min-width: 100%;
-  min-height: 100%;
 }
 
 .slider {
